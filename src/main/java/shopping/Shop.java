@@ -13,6 +13,8 @@ public class Shop {
     System.out.println("socks match? " + socks.matches());
     System.out.println("gloves match? " + gloves.matches());
 
-    boolean m = ClothingPair.match(new Glove("Blue", 4), new Glove("Green", 4));
+
+//    Colored & Sized g = new Glove("Black", 5);
+    boolean m = ClothingPair.<Glove>match(new Glove("Blue", 4), new Glove("Green", 4));
   }
 }
